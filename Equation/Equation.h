@@ -5,12 +5,15 @@
 
 #include "Parameter.h"
 #include "PhaseVariable.h"
+#include "StateVector.h"
 #include <vector>
 
 class Equation {
 public:
     Equation();
     virtual ~Equation();
+
+    virtual bool rhs(const StateVector & q, StateVector & dq) = 0;
 
     void addParameter(const char * name, double * p);
     Parameter * findParameter(const char * name);
