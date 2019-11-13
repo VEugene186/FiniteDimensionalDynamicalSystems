@@ -5,6 +5,7 @@ equation: checkdir
 	g++ --std=c++11 -O3 Equation/Parameter.cpp -c -o bin/Parameter.o
 	g++ --std=c++11 -O3 Equation/PhaseVariable.cpp -c -o bin/PhaseVariable.o
 	g++ --std=c++11 -O3 Equation/StateVector.cpp -c -o bin/StateVector.o
+	g++ --std=c++11 -O3 Equation/StateArray.cpp -c -o bin/StateArray.o
 	g++ --std=c++11 -O3 Equation/Equation.cpp -c -o bin/Equation.o
 
 method: equation
